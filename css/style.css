@@ -51,6 +51,7 @@ header p {
     float: left;
     list-style: none;
     margin-right: 10px;
+    box-sizing: border-box;
 
 }
 
@@ -118,10 +119,42 @@ img {
     padding: 20px 40px 7px 40px;
 }
 
+@media screen and (max-width: 700px) {
+    .info-box {
+        display: none;
+    }
+
+    .row {
+       display: block;
+    }
+
+    .site-nav li{
+        width: 33.332%;
+        margin-right: 0;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .site-nav a {
+        margin-right: 5px;
+        margin-bottom: 5px; 
+    }
+
+    p {padding: 0px 10px  ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav li {
+        width: 50%;
+    }
+}
+
 /* Footer */
 
 footer {
     text-align: center;
+    color: #ccdab1; 
 }
 /* Clear Fix*/
 
